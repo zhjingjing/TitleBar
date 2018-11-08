@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zj.titlebar.MainActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.zj.titlebar.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#00ff00"
+            app:titleSize="18sp"
+            app:titleColor="#ff0000"
+            app:titleText="标题1"
+            app:leftBtnClick="onLeft1Clicked"
+            app:leftBtnText="返回"
+            app:leftBtn2Click="onLeft2Clicked"
+            app:leftBtn2Text="name"
+            app:rightBtnText="确定"
+            app:rightBtnClick="onRight1Clicked"
+            app:rightBtn2Text="分享"
+            app:rightBtn2Click="onRight2Clicked"
+            ></com.zj.titlebar.TitleBar>
+
+
+        <com.zj.titlebar.TitleBar
+            android:id="@+id/title_bar2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:titleSize="18sp"
+            app:titleColor="#ff0000"
+            app:titleText="标题2"
+            app:leftBtnIcon="@mipmap/titlebar_back_blue"
+            app:rightBtnIcon="@mipmap/icon_share"
+            ></com.zj.titlebar.TitleBar>
+
+        <com.zj.titlebar.TitleBar
+            android:id="@+id/title_bar3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:titleSize="18sp"
+            app:titleColor="#ff0000"
+            app:titleText="标题3"
+            ></com.zj.titlebar.TitleBar>
+    </LinearLayout>
+</layout>
